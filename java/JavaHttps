@@ -16,10 +16,11 @@ public class JavaHttps {
     public static final String username = "username";
     public static final String password = "password";
     public static final int port = 12233;
+    public static final String proxyHost = "t.pr.thordata.net";
     public CloseableHttpClient client;
 
     public JavaHttps() {
-        HttpHost proxy = new HttpHost("t.pr.thordata.net", port, "https");
+        HttpHost proxy = new HttpHost(proxyHost, port, "https");
         CredentialsProvider cred_provider = new BasicCredentialsProvider();
         cred_provider.setCredentials(new AuthScope(proxy),
                 new UsernamePasswordCredentials(username, password));
