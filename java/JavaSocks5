@@ -1,0 +1,54 @@
+import java.io.*;
+import org.apache.http.HttpHost;
+import org.apache.http.auth.*;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.client.methods.*;
+import org.apache.http.impl.client.*;
+import org.apache.http.util.EntityUtils;
+
+public class JavaSocks5 {
+    public static final String username = "username";
+    public static final String password = "password";
+    public static final int port = 12233;
+    public static final String proxyHost = "t.pr.thordata.net";
+    public CloseableHttpClient client;
+
+    public JavaSocks5() {
+        HttpHost proxy = new HttpHost(proxyHost, port);
+
+        CredentialsProvider credsProvider = new BasicCredentialsProvider();
+        credsProvider.setCredentials(
+                new AuthScope(proxyHost, port),
+                new UsernamePasswordCredentials(username, password)
+        );
+
+        HttpClientBuilder clientBuilder = HttpClients.custom()
+                .setDefaultCredentialsProvider(credsProvider)
+                .setProxy(proxy);
+
+        client = clientBuilder.build();
+    }
+
+    public String request(String url) throws IOException {
+        HttpGet request = new HttpGet(url);
+        CloseableHttpResponse response = client.execute(request);
+        try {
+            return EntityUtils.toString(response.getEntity());
+        } finally {
+            response.close();
+        }
+    }
+
+    public void close() throws IOException {
+        client.close();
+    }
+
+    public static void main(String[] args) throws IOException {
+        JavaSocks5 client = new JavaSocks5();
+        try {
+            System.out.println(client.request("https://myip.thordata.net"));
+        } finally {
+            client.close();
+        }
+    }
+}
