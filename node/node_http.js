@@ -2,7 +2,7 @@ const rp = require('request-promise');
 
 const username = "username";
 const password = "password";
-const proxyServer = "t.pr.thordata.net";
+const proxyServer = "t.pr.thordata.net:12233";
 
 rp({
     url: 'https://ipinfo.thordata.com',  
