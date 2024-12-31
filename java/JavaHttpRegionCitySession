@@ -54,7 +54,7 @@ public class JavaHttpRegionCitySession {
     public static void main(String[] args) throws IOException {
         JavaHttpRegionCitySession client = new JavaHttpRegionCitySession();
         try {
-            System.out.println(client.request("https://myip.thordata.net"));
+            System.out.println(client.request("https://ipinfo.thordata.com"));
         } finally { client.close(); }
     }
 }
