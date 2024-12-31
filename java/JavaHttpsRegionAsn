@@ -12,7 +12,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class JavaHttps {
+public class JavaHttpsRegionAsn {
     public static final String username = "username";
     public static final String password = "password";
     public static final int port = 12233;
@@ -20,7 +20,7 @@ public class JavaHttps {
     public static final String asn = "AS10796";
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s-asn-%s", username, region,asn);;
+    public static final String proxyname = String.format("user-%s-region-%s-asn-%s", username, region,asn);
     public CloseableHttpClient client;
 
     public JavaHttps() {
