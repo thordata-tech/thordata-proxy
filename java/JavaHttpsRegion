@@ -12,14 +12,14 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class JavaHttps {
+public class JavaHttpsRegion {
     public static final String username = "username";
     public static final String password = "password";
     public static final int port = 12233;
     public static final String region = "us";
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s", username, region);;
+    public static final String proxyname = String.format("user-%s-region-%s", username, region);
     public CloseableHttpClient client;
 
     public JavaHttps() {
