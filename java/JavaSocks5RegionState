@@ -51,7 +51,7 @@ public class JavaSocks5RegionState {
     public static void main(String[] args) throws IOException {
         JavaSocks5 client = new JavaSocks5();
         try {
-            System.out.println(client.request("https://myip.thordata.net"));
+            System.out.println(client.request("https://ipinfo.thordata.com"));
         } finally {
             client.close();
         }
