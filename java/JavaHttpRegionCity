@@ -50,7 +50,7 @@ public class JavaHttpRegionCity {
     public static void main(String[] args) throws IOException {
         JavaHttpRegionCity client = new JavaHttpRegionCity();
         try {
-            System.out.println(client.request("https://myip.thordata.net"));
+            System.out.println(client.request("https://ipinfo.thordata.com"));
         } finally { client.close(); }
     }
 }
