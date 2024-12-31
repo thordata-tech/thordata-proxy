@@ -12,7 +12,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
-public class JavaHttpsCity {
+public class JavaHttpsRegionCity {
     public static final String username = "username";
     public static final String password = "password";
     public static final int port = 12233;
