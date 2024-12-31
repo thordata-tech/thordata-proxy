@@ -21,7 +21,7 @@ public class JavaHttpRegionAsn {
     public static final String state = "alabama";
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s-st-%s", username, region,state);;
+    public static final String proxyname = String.format("user-%s-region-%s-st-%s", username, region,state);
     public CloseableHttpClient client;
 
 
