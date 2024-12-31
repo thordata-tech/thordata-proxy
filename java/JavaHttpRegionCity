@@ -21,7 +21,7 @@ public class JavaHttpRegionCity {
     public static final String city = "houston";
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s-city-%s", username, region,city);;
+    public static final String proxyname = String.format("user-%s-region-%s-city-%s", username, region,city);
     public CloseableHttpClient client;
 
 
