@@ -1,5 +1,5 @@
 <?php
-  $url = 'myip.thordata.net';
+  $url = 'ipinfo.thordata.com';
   $proxy = 't.pr.thordata.net';
   $port = 12233;
   $user = 'username';

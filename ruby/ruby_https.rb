@@ -7,7 +7,7 @@ proxy_port = 12233
 proxy_user = 'username'
 proxy_pass = 'password'
 
-uri = URI.parse('https://myip.thordata.net')
+uri = URI.parse('https://ipinfo.thordata.com')
 
 proxy = Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
 

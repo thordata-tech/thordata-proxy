@@ -12,7 +12,7 @@ proxy_sessid = 'a123123'
 proxy_sesstime = 10
 proxy_user = "user-#{proxy_username}-region-#{proxy_country}-city-#{proxy_city}-sessid=#{proxy_sessid}-sesstime=#{proxy_sesstime}"
 
-uri = URI.parse('https://myip.thordata.net')
+uri = URI.parse('https://ipinfo.thordata.com')
 
 proxy = Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
 

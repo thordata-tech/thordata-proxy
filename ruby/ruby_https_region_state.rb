@@ -11,7 +11,7 @@ proxy_state = 'alabama'
 
 proxy_user = "user-#{proxy_username}-region-#{proxy_country}-st-#{proxy_state}"
 
-uri = URI.parse('https://myip.thordata.net')
+uri = URI.parse('https://ipinfo.thordata.com')
 
 proxy = Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
 

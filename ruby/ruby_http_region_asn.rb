@@ -10,7 +10,7 @@ proxy_asn = 'AS10796'
 
 proxy_user = "user-#{proxy_username}-region-#{proxy_country}-asn-#{proxy_asn}"
 
-uri = URI.parse('https://myip.thordata.net') 
+uri = URI.parse('https://ipinfo.thordata.com') 
 proxy = Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass) 
 
 req = Net::HTTP::Get.new(uri)

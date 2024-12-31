@@ -9,7 +9,7 @@ proxy_pass = 'password'
 proxy_country = 'us'
 proxy_user = "user-#{proxy_username}-region-#{proxy_country}"
 
-uri = URI.parse('https://myip.thordata.net')
+uri = URI.parse('https://ipinfo.thordata.com')
 
 proxy = Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass)
 

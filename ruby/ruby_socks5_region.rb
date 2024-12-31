@@ -13,7 +13,7 @@ TCPSocket::socks_port = proxy_port
 TCPSocket::socks_username = proxy_user
 TCPSocket::socks_password = proxy_pass
 
-uri = URI('http://myip.thordata.net')
+uri = URI('http://ipinfo.thordata.com')
 http = Net::HTTP.new(uri.host, uri.port)
 
 request = Net::HTTP::Get.new(uri)
