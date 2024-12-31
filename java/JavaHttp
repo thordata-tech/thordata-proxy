@@ -39,7 +39,7 @@ public class JavaHttp {
     public static void main(String[] args) throws IOException {
         JavaHttp client = new JavaHttp();
         try {
-            System.out.println(client.request("https://myip.thordata.net"));
+            System.out.println(client.request("https://ipinfo.thordata.com"));
         } finally { client.close(); }
     }
 }
