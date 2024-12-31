@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-class csharp_http_region_city
+class csharp_http_region_state
 {
     static void Main(string[] args)
     {
@@ -22,8 +22,8 @@ class csharp_http_region_city
         String username = "username";
         String password = "password";
         String country = "us";
-        String city = "houston";
-        String proxyUserName = $"user-{username}-region-{country}-city-{city}";
+        String state = "alabama";
+        String proxyUserName = $"user-{username}-region-{country}-st-{state}";
 
 
         var proxy = new WebProxy("http://t.pr.thordata.net:12233")
