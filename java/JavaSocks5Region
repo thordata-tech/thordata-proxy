@@ -17,10 +17,9 @@ public class JavaSocks5 {
     public CloseableHttpClient client;
 
     public JavaSocks5() {
-        // 设置代理
+        
         HttpHost proxy = new HttpHost(proxyHost, port);
 
-        // 创建代理认证信息
         CredentialsProvider credsProvider = new BasicCredentialsProvider();
         credsProvider.setCredentials(
                 new AuthScope(proxyHost, port),
