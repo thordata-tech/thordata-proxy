@@ -20,7 +20,7 @@ public class JavaHttpRegion {
     public static final String region = "us";
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s", username, region);;
+    public static final String proxyname = String.format("user-%s-region-%s", username, region);
     public CloseableHttpClient client;
 
 
