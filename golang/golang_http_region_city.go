@@ -10,7 +10,7 @@ import (
 
 const (
 	resourceUrl = "https://ipinfo.thordata.com"
-	proxyHost   = "hiesllxm.pr.thordata.net:12233"
+	proxyHost   = "t.pr.thordata.net:12233"
 	username    = "username"
 	password    = "password"
 	country     = "us"
