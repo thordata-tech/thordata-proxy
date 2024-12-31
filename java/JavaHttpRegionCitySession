@@ -25,7 +25,7 @@ public class JavaHttpRegionCitySession {
     public static final int sesstime = 10;
     public static final String proxyHost = "t.pr.thordata.net";
 
-    public static final String proxyname = String.format("user-%s-region-%s-city-%s-sessid-%s-sesstime-%s", username, region,city,sessid,sesstime);;
+    public static final String proxyname = String.format("user-%s-region-%s-city-%s-sessid-%s-sesstime-%s", username, region,city,sessid,sesstime);
     public CloseableHttpClient client;
 
 
