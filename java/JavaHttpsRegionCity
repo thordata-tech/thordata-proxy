@@ -48,7 +48,7 @@ public class JavaHttpsRegionCity {
     public static void main(String[] args) throws IOException {
         JavaHttps client = new JavaHttps();
         try {
-            System.out.println(client.request("https://myip.thordata.net"));
+            System.out.println(client.request("https://ipinfo.thordata.com"));
         } finally { client.close(); }
     }
 }
