@@ -14,7 +14,7 @@ const (
 	username    = "username"
 	password    = "password"
 	country     = "us"
-	state        = "alabama"
+	state       = "alabama"
 )
 
 func main() {
